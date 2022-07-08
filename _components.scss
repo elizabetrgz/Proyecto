@@ -99,4 +99,18 @@ $color-main: #0075FF;
     }
 }
 
+.icon-desc{
+    .icon{
+        color:$color-main;
+        font-size: 10rem;
+        padding: 0;
+    }
+
+    .title{
+      margin-top: -2rem;
+      font-weight: 600;
+      font-size: 1.5rem; 
+    }
+}
+
 
