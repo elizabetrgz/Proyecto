@@ -52,10 +52,21 @@ $color-main: #0075FF;
 
 
 .main-menu{
+    margin-bottom: 0;
     li{
-        font-size:0.5rem ;
+        font-size:0.75rem ;
         list-style: none;
         display: inline;
+        margin-left: 5px;
+
+        a{
+            color:#000;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -100,6 +111,10 @@ $color-main: #0075FF;
 }
 
 .icon-desc{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
     .icon{
         color:$color-main;
         font-size: 10rem;
