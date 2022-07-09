@@ -1,5 +1,14 @@
 @use "components";
 
+@mixin sectio-display {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    padding: 3rem;
+
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -22,17 +31,29 @@
 
 .sec-home{
     display: flex;
-    width: 100%;
-    max-width: 768px;
-    margin: auto;
-    padding: 5rem;
+    @include sectio-display();
     align-items: center;
 
     .home-cta{
        flex:1;
         .cta-text{
             color:components.$color-main;
-
         }
     }
 }
+
+.sec-features{
+    @include sectio-display();
+
+    .intro{
+        text-align: center;
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 0.8;
+            color: #888;
+        }
+    }
+}
+
