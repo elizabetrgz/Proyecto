@@ -119,21 +119,21 @@ $color-main: #0075FF;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-    .icon{
+    i{
         color:$color-main;
-        font-size: 10rem;
+        font-size: 7rem;
         padding: 0;
     }
 
     .title{
-      margin-top: -2rem;
+      margin-top: -1rem;
       font-weight: 600;
       font-size: 1.5rem; 
     }
-    .home-title{
-        width: 20rem;
-        font-size: 3rem;
-    }
+    // .home-title{
+    //     width: 20rem;
+    //     font-size: 3rem;
+    // }
 }
 
 
