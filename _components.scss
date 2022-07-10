@@ -1,4 +1,5 @@
 $color-main: #0075FF;
+$footer-color:#f4f8fe;
 
 @mixin  btn-sm-modify {
     font-size: 0.75rem;
@@ -121,14 +122,13 @@ $color-main: #0075FF;
    justify-content: center;
     i{
         color:$color-main;
-        font-size: 7rem;
+        font-size:4rem;
         padding: 0;
     }
 
     .title{
-      margin-top: -1rem;
       font-weight: 600;
-      font-size: 1.5rem; 
+      font-size: 1.3rem; 
     }
     // .home-title{
     //     width: 20rem;
