@@ -89,13 +89,12 @@
 }
 .icon-desc i {
   color: #0075FF;
-  font-size: 7rem;
+  font-size: 4rem;
   padding: 0;
 }
 .icon-desc .title {
-  margin-top: -1rem;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 * {
@@ -214,11 +213,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 50px;
 }
 .sec-omboarding .steps .step-separator {
   flex: 1;
   border-top: 1px solid #ddd;
   margin: 0 1rem;
+}
+
+.sec-footer-cta {
+  background-image: url("./img/bg.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-color: #f4f8fe;
+  padding: 5rem;
+}
+.sec-footer-cta .footer-cta {
+  max-width: 50%;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

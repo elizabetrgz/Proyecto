@@ -139,6 +139,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 50px;
       
         .step-separator{
             flex: 1;
@@ -148,3 +149,21 @@
     }
 }
 
+.sec-footer-cta{
+    background-image: url("./img/bg.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color: components.$footer-color;
+    padding: 5rem;
+    .footer-cta{
+        max-width: 50%;
+        .cta-title{
+            font-size: 2rem;
+        }
+        .cta-description{
+            font-size: 1.1rem;
+        }
+
+    }
+   
+}
