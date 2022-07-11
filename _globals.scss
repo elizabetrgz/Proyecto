@@ -8,9 +8,16 @@
 
 }
 
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html{
     min-width: 100vw;
 }
+
 
 
 
@@ -101,7 +108,14 @@ html{
 
     
 }
-
+.sec-features{
+    .intro{
+        font-size: 1rem;
+        h3{
+            font-size: 2rem;
+        }
+    }
+}
 .sec-benefits{
     border-top: 1px solid #ddd;
     
@@ -109,9 +123,12 @@ html{
         @extend .sec-features, .intro;
     }
     .benefit-cards{
-        width: 80%;
         padding: 0 2rem 2rem 2rem;
         margin: auto;
+        .benefit{
+            padding: 0 25px;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -164,7 +181,7 @@ html{
     background-color: components.$footer-color;
     padding: 5rem;
     .footer-cta{
-        max-width: 50%;
+        width: 50%;
         .cta-title{
             font-size: 2rem;
         }
@@ -178,7 +195,21 @@ html{
 
 
 @media(max-width:768px){
+    .sec-kpis{
+        .kpi{
+            margin-bottom: 20px;
+        }
+    }
     .sec-omboarding{
+        .intro{
+            text-align: center;
+            h3{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
         .steps{
         padding: 0 3rem 5rem 3rem;
         flex-direction: column;
@@ -191,6 +222,27 @@ html{
                 font-size: 7rem;
             }
         }
+        }
+    }
+
+    .sec-benefits{
+        
+        .intro {
+            text-align: center;
+            h3{
+            font-size: 2rem;
+            
+         }
+        }  
+    }
+
+
+    .sec-footer-cta{
+        background-image: none;
+        padding: 2rem;
+        .footer-cta{
+            width: 100%;
+            text-align: center;
         }
     }
 

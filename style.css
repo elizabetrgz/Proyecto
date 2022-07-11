@@ -57,8 +57,7 @@
 .benefit {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  margin: 0 10px;
+  padding: 0 17px;
 }
 .benefit .icon {
   color: #0075FF;
@@ -95,6 +94,12 @@
 .icon-desc .title {
   font-weight: 600;
   font-size: 1.3rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -183,13 +188,23 @@ html {
   max-width: 25rem;
 }
 
+.sec-features .intro, .sec-omboarding .intro .intro, .sec-benefits .intro .intro {
+  font-size: 1rem;
+}
+.sec-features .intro h3, .sec-omboarding .intro .intro h3, .sec-benefits .intro .intro h3 {
+  font-size: 2rem;
+}
+
 .sec-benefits {
   border-top: 1px solid #ddd;
 }
 .sec-benefits .benefit-cards {
-  width: 80%;
   padding: 0 2rem 2rem 2rem;
   margin: auto;
+}
+.sec-benefits .benefit-cards .benefit {
+  padding: 0 25px;
+  margin-bottom: 10px;
 }
 
 .sec-kpis {
@@ -234,7 +249,7 @@ html {
   padding: 5rem;
 }
 .sec-footer-cta .footer-cta {
-  max-width: 50%;
+  width: 50%;
 }
 .sec-footer-cta .footer-cta .cta-title {
   font-size: 2rem;
@@ -244,6 +259,18 @@ html {
 }
 
 @media (max-width: 768px) {
+  .sec-kpis .kpi {
+    margin-bottom: 20px;
+  }
+  .sec-omboarding .intro {
+    text-align: center;
+  }
+  .sec-omboarding .intro h3 {
+    font-size: 2rem;
+  }
+  .sec-omboarding .intro p {
+    font-size: 1rem;
+  }
   .sec-omboarding .steps {
     padding: 0 3rem 5rem 3rem;
     flex-direction: column;
@@ -254,6 +281,20 @@ html {
   }
   .sec-omboarding .steps .icon-desc i {
     font-size: 7rem;
+  }
+  .sec-benefits .intro {
+    text-align: center;
+  }
+  .sec-benefits .intro h3 {
+    font-size: 2rem;
+  }
+  .sec-footer-cta {
+    background-image: none;
+    padding: 2rem;
+  }
+  .sec-footer-cta .footer-cta {
+    width: 100%;
+    text-align: center;
   }
 }
 
