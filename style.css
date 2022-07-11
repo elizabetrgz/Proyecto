@@ -129,6 +129,12 @@
 .sec-home .home-cta .cta-text {
   color: #0075FF;
 }
+.sec-home .home-cta .home-description {
+  width: 300px;
+}
+.sec-home .home-cta .lead-magnet .input-col {
+  max-width: 200px;
+}
 
 .sec-features, .sec-omboarding .intro, .sec-benefits .intro {
   width: 100%;
