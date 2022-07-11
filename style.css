@@ -89,7 +89,7 @@
 }
 .icon-desc i {
   color: #0075FF;
-  font-size: 4rem;
+  font-size: 5rem;
   padding: 0;
 }
 .icon-desc .title {
@@ -97,9 +97,8 @@
   font-size: 1.3rem;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+html {
+  min-width: 100vw;
 }
 
 .nav {
@@ -242,6 +241,20 @@
 }
 .sec-footer-cta .footer-cta .cta-description {
   font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-omboarding .steps {
+    padding: 0 3rem 5rem 3rem;
+    flex-direction: column;
+  }
+  .sec-omboarding .steps .icon-desc .title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .sec-omboarding .steps .icon-desc i {
+    font-size: 7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
